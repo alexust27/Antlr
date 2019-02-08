@@ -1,0 +1,47 @@
+fac :: Integer -> Integer
+fac 0 = 1
+fac n | n > 0 = n * fac(n - 1)
+
+f :: Integer -> Integer -> Integer
+
+fac2 :: Integer -> Integer
+fac2 0 = 1
+fac2 n | n > 0 = n * fac(n - 1)
+       | n < 0 = n * fac(n + 1)
+
+fff :: Integer
+fff = 1 - 2 - 3
+
+gcd :: Integer -> Integer -> Integer
+
+gcd x y | x == 0 = y
+gcd x y = gcd(y, x % y)
+
+doo :: String -> String
+doo a = a + a
+
+concat :: String -> String -> String
+concat s1 s2 = s1 + s2
+
+A :: Integer
+A = 12
+A = 13
+
+chToInt :: Char -> Integer
+chToInt ch = ch + 100
+
+bb :: Boolean -> Integer
+bb x | x = -1
+     | !x = 2
+
+less :: Integer -> Integer -> Boolean
+less a b | a < b = true
+         | a >= b = false
+
+C :: Integer -> Integer -> Integer
+C 1 1 = 1
+C n 0 = 1
+C 1 m = 1
+C n m | n < m = C(n, n)
+      | n >= m = C(n - 1, m - 1) + C(n - 1, m)
+
