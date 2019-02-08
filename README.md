@@ -25,7 +25,7 @@ int fac(int n) {
 :----:                  | :---: | ------            | ----- |
 \[a-zA-Z\]\[a-zA-Z0-9\]*| VAR   | *                 | MUL   |
 -?[1-9][0-9]*&#124;0    | NUM   | /                 | DIV   |
-+                       | ADD   | -                 | SUB   |
+ &#43;                  | ADD   | -                 | SUB   |
 ->                      | ARROW | ::                | COLON2|
 (                       | LPAR  | )                 | RPAR  |
 ==                      | EQ    | !=                | NEQ   |
